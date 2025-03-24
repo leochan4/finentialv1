@@ -90,5 +90,6 @@ struct RoundedCorner: Shape {
 }
 
 #Preview {
-    ContentView()
+    ContentView()}
 
+                    
