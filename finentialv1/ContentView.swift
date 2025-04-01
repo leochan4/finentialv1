@@ -15,7 +15,7 @@ struct ContentView: View {
                 Image("finentiallanding")
                     .resizable()
                     .scaledToFill()
-                    .frame(height: 300)
+                    .frame(height: 500)
                     .clipped()
                     .clipShape(RoundedCorner(radius: 50, corners: [.bottomLeft, .bottomRight]))
                 
@@ -24,7 +24,7 @@ struct ContentView: View {
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.top, 60)
-                        .padding(.leading, 20)
+                        .padding(.leading, 60)
                     
                     Spacer()
                     
@@ -32,10 +32,10 @@ struct ContentView: View {
                         .font(.system(size: 16, weight: .bold))
                         .foregroundColor(.white)
                         .padding(.bottom, 20)
-                        .padding(.leading, 20)
+                        .padding(.leading, 60)
                     
                 }
-                .frame(height: 300, alignment: .bottomLeading)
+                .frame(height: 500, alignment: .bottomLeading)
             }
             
             Spacer()
