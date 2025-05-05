@@ -4,6 +4,7 @@
 //
 //  Created by Bryan Trieu on 2025-03-31.
 //
+//Figma 2
 import SwiftUI
 struct SignUpView: View {
     @State private var userID = ""

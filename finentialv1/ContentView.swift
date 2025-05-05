@@ -3,6 +3,7 @@
 //  finentialv1
 //
 //  Created by Leo Suen on 2025-03-23.
+// Figma 1
 //
 
 import SwiftUI
