@@ -29,22 +29,9 @@
 		B02359522D9109AB007B65A7 /* finentialv1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finentialv1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		372BCB512DBB77C50037C260 /* Exceptions for "finentialv1" folder in "finentialv1" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Untitled.swift,
-			);
-			target = B02359372D9109AA007B65A7 /* finentialv1 */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B023593A2D9109AA007B65A7 /* finentialv1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				372BCB512DBB77C50037C260 /* Exceptions for "finentialv1" folder in "finentialv1" target */,
-			);
 			path = finentialv1;
 			sourceTree = "<group>";
 		};

@@ -27,6 +27,7 @@
 		B02359382D9109AA007B65A7 /* finentialv1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finentialv1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02359482D9109AB007B65A7 /* finentialv1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finentialv1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02359522D9109AB007B65A7 /* finentialv1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finentialv1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D8827F2DD431D30052CD3F /* finentialv1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = finentialv1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -88,6 +89,13 @@
 				B02359382D9109AA007B65A7 /* finentialv1.app */,
 				B02359482D9109AB007B65A7 /* finentialv1Tests.xctest */,
 				B02359522D9109AB007B65A7 /* finentialv1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0D882802DD431D30052CD3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +206,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B02359392D9109AA007B65A7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B0D882802DD431D30052CD3F /* Products */;
+					ProjectRef = B0D8827F2DD431D30052CD3F /* finentialv1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B02359372D9109AA007B65A7 /* finentialv1 */,
