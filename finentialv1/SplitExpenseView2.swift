@@ -1,18 +1,18 @@
 //
-//  SplitExpenseView.swift
+//  SplitExpenseView2.swift
 //  finentialv1
 //
-//  Created by Leo Suen on 2025-05-04.
-//Figma 26
+//  Created by Leo Suen on 2025-05-13.
+// figma 27
 
 import SwiftUI
 
-struct SplitExpenseView: View {
+struct SplitExpenseView2: View {
     let expenseDate = "12-12-2024"
     let restaurant = "Gyukaku"
     
-    let items: [ExpenseItem] = [
-        .init(name: "meat", quantity: 1, cost: 91.00, assigned: ["ALL"]),
+    let items: [ExpenseItem2] = [
+        .init(name: "meat", quantity: 1, cost: 91.00, assigned: ["A", "B", "C", "D", "E", "F", "G"], startExpanded: true),
         .init(name: "salad", quantity: 1, cost: 4.20, assigned: ["L"]),
         .init(name: "pepsi", quantity: 3, cost: 3.00, assigned: ["B", "J"]),
         .init(name: "soju", quantity: 2, cost: 15.00, assigned: ["B"]),
@@ -70,7 +70,7 @@ struct SplitExpenseView: View {
             ScrollView {
                 VStack(spacing: 12) {
                     ForEach(items) { item in
-                        ItemRowView(item: item)
+                        ItemRowView2(item: item)
                     }
                 }
                 .padding(.horizontal)
@@ -103,17 +103,23 @@ struct SplitExpenseView: View {
     }
 }
 
-struct ExpenseItem: Identifiable {
+struct ExpenseItem2: Identifiable {
     let id = UUID()
     var name: String
     var quantity: Int
     var cost: Double
     var assigned: [String] // Example: ["B", "J"]
+    var startExpanded: Bool = false
 }
 
-struct ItemRowView: View {
-    var item: ExpenseItem
-    @State private var isExpanded = false
+struct ItemRowView2: View {
+    var item: ExpenseItem2
+    @State private var isExpanded: Bool
+    
+    init(item: ExpenseItem2){
+        self.item = item
+        _isExpanded = State(initialValue: item.startExpanded)
+    }
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -129,7 +135,7 @@ struct ItemRowView: View {
             HStack {
                 HStack(spacing: 8) {
                     ForEach(displayedAssigned, id: \.self) { label in
-                        CircleLabel(text: label)
+                        CircleLabel2(text: label)
                     }
 
                     if !isExpanded && item.assigned.count > 2 {
@@ -171,7 +177,7 @@ struct ItemRowView: View {
     }
 }
 
-struct CircleLabel: View {
+struct CircleLabel2: View {
     var text: String
     var color: Color = .gray
     
@@ -205,12 +211,13 @@ struct CircleLabel: View {
 }
 
 // Preview
-struct SplitExpenseView_Previews: PreviewProvider {
+struct SplitExpenseView2_Previews: PreviewProvider {
     static var previews: some View {
-        SplitExpenseView()
+        SplitExpenseView2()
     }
 }
 
 #Preview {
-    SplitExpenseView()
+    SplitExpenseView2()
 }
+
